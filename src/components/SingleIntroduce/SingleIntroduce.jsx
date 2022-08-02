@@ -2,7 +2,7 @@ import react from "react";
 import { Col } from "react-bootstrap";
 const SingleIntroduce = (props) => {
   return (
-    <Col col="col lg-4">
+    <Col lg={4}>
         <div className="learn-item">
         <img src={`assets/images/${props.data.image}`} />
         <h2>{props.data.title}</h2>
