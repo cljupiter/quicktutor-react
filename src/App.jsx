@@ -1,8 +1,6 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./layouts/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Layout from "./layouts/Layout"
 import Home from "./pages/Home/Home"
-import './style.css'
-import './responsive.css'
 
 function App() {
   return (

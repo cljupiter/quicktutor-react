@@ -1,5 +1,5 @@
 import react from "react";
-import { Row } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
 import SingleIntroduce from "../../components/SingleIntroduce/SingleIntroduce.jsx";
 const LearningIntroduce = () => {
     const introduceDetail = [
@@ -24,13 +24,13 @@ const LearningIntroduce = () => {
   ];
   return (
     <div className="learn-section">
-      <div className="container p-0">
+      <Container>
         <Row>
             {introduceDetail.map((item, index) => (
             <SingleIntroduce data={item} key={index} />
             ))}
         </Row>
-      </div>
+      </Container>
     </div>
   );
 };
