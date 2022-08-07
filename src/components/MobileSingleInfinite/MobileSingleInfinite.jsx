@@ -1,8 +1,10 @@
 import react from "react";
+import { Link } from "react-router-dom";
+
 const MobileSingleInfinite = (props) => {
   return (
     <div className="mobile-img-item">
-      <a href="#">
+      <Link to="#">
         <div className="image-back" style={{backgroundImage: `url(${props.data.image})`}}></div>
         <div className="mobile-img-item-name">
           <div className="community-icon-wrapper">
@@ -10,7 +12,7 @@ const MobileSingleInfinite = (props) => {
           </div>
           <span>{ props.data.title }</span>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };
