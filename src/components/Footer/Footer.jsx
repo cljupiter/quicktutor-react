@@ -13,9 +13,9 @@ const Footer = () => {
         <footer>
             <div className="footer-content">
                 <Row>
-                    <AboutUs classVal="col-md-3 d-flex flex-column" />
-                    <Community classVal="col-md-3 d-flex flex-column" />
-                    <Legal classVal="col-md-3 d-flex flex-column" />
+                    <AboutUs classVal="col-md-3 d-flex flex-column" imageDisplay="initial" />
+                    <Community classVal="col-md-3 d-flex flex-column" imageDisplay="initial" />
+                    <Legal classVal="col-md-3 d-flex flex-column" imageDisplay="initial" />
                     <MadeIn classVal="col-md-3 d-flex flex-column justify-content-start made-in" />
                 </Row>
             </div>

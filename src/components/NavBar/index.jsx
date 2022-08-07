@@ -4,6 +4,7 @@ import { LayoutContext } from "../../contexts/layout";
 
 const NavBar = () => {
     const {
+        isScrolled,
         setIsScrolled,
         sideOpened,
         setSideOpened,
@@ -16,7 +17,7 @@ const NavBar = () => {
     };
     function scrollFunction() {
         var scrollTop = document.documentElement.scrollTop;
-        if (scrollTop == 0) {
+        if (sideOpened=="" && scrollTop == 0) {
             setIsScrolled("");
             setNavBack("");
             setLogoSrc("assets/images/logo.svg")
@@ -28,6 +29,7 @@ const NavBar = () => {
         }
     }
     function openSideFunction() {
+        var scrollTop = document.documentElement.scrollTop;
         if(sideOpened == "") {
             setSideOpened("open");
             setIsScrolled("is-scrolled");
@@ -37,10 +39,12 @@ const NavBar = () => {
         }
         else if(sideOpened == "open") {
             setSideOpened("");
-            setIsScrolled("");
-            setNavBack("");
-            setLogoSrc("assets/images/logo.svg")
             setBurgerImage("assets/images/burger@1x.svg");
+            if(scrollTop == 0) {
+                setIsScrolled("");
+                setNavBack("");
+                setLogoSrc("assets/images/logo.svg")
+            }
         }
     }
     return(

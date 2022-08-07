@@ -588,6 +588,17 @@ footer {
   animation: .4s;
 }
 
+.side-content a {
+  margin-bottom: 10px;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 1.17;
+  letter-spacing: .3px;
+  color: #fff;
+  transition: .5s;
+  animation: .4s;
+}
+
 .footer-content a img {
   opacity: 0;
   height: 9px;
@@ -595,6 +606,10 @@ footer {
 
 .footer-content a:hover {
   color: #fff;
+}
+
+.side-content a:hover {
+  color: #95959c;
 }
 
 .footer-content a:hover img {
