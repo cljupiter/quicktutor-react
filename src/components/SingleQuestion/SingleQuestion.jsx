@@ -1,4 +1,6 @@
 import react from "react";
+import { Link } from "react-router-dom";
+
 const SingleQuestion = (props) => {
   return (
     <div className="col-sm-6 col-12">
@@ -9,9 +11,9 @@ const SingleQuestion = (props) => {
         <p className="description">
         {props.data.description}
         </p>
-        <a href="#"
+        <Link to="#"
         >{props.data.btnTitle} <img src="assets/images/right-purple@1x.svg"
-        /></a>
+        /></Link>
     </div>
   );
 };
