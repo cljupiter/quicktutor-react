@@ -28,7 +28,7 @@ const NavBar = () => {
     return(
         <>
             <header className={isScrolled}>
-                <Navbar className={"navbar-expand-lg "+navBack}>
+                <Navbar className={`navbar-expand-lg ${navBack}`}>
                     <div className="container-fluid d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <Navbar.Brand href="/">
