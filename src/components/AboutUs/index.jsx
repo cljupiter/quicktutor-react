@@ -1,8 +1,8 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-const AboutUs = () => {
+const AboutUs = (props) => {
     return(
-        <>
+        <div className={`${props.classVal}`}>
             <h3>About Us</h3>
             <a href="#">Careers<img src="assets/images/right@1x.svg" /></a>
             <a href="#">Contact Us<img src="assets/images/right@1x.svg" /></a>
@@ -10,7 +10,7 @@ const AboutUs = () => {
             <a href="#"
               >Why QuickTutor?<img src="assets/images/right@1x.svg"
             /></a>
-        </>
+        </div>
     );
 };
 export default AboutUs;

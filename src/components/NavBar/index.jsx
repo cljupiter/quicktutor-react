@@ -4,10 +4,12 @@ import { LayoutContext } from "../../contexts/layout";
 
 const NavBar = () => {
     const {
-        isScrolled,
         setIsScrolled,
+        sideOpened,
+        setSideOpened,
     } = useContext(LayoutContext);
     const [navBack, setNavBack] = useState("");
+    const [burgerImage, setBurgerImage] = useState("assets/images/burger@1x.svg");
     const [logoSrc, setLogoSrc] = useState("assets/images/logo.svg");
     window.onscroll = function () {
         scrollFunction();
@@ -25,10 +27,25 @@ const NavBar = () => {
             setLogoSrc("assets/images/logo-scroll.svg")
         }
     }
+    function openSideFunction() {
+        if(sideOpened == "") {
+            setSideOpened("open");
+            setIsScrolled("is-scrolled");
+            setNavBack("navbar-back");
+            setLogoSrc("assets/images/logo-scroll.svg");
+            setBurgerImage("assets/images/cross@1x.svg");
+        }
+        else if(sideOpened == "open") {
+            setSideOpened("");
+            setIsScrolled("");
+            setNavBack("");
+            setLogoSrc("assets/images/logo.svg")
+            setBurgerImage("assets/images/burger@1x.svg");
+        }
+    }
     return(
         <>
-            <header className={isScrolled}>
-                <Navbar className={`navbar-expand-lg ${navBack}`}>
+            <Navbar className={`navbar-expand-lg ${navBack}`}>
                     <div className="container-fluid d-flex justify-content-between align-items-center">
                         <div className="d-flex align-items-center">
                             <Navbar.Brand href="/">
@@ -43,12 +60,11 @@ const NavBar = () => {
                             <button type="button" className="btn btn-outline-purple">Log in</button>
                             <button type="button" className="btn btn-purple">Sign up</button>
                         </div>
-                        <button className="hamburger-button" id="mobile-btn">
-                            <img src="assets/images/burger@1x.svg" />
+                        <button className="hamburger-button" onClick={openSideFunction} id="mobile-btn">
+                            <img src={burgerImage} />
                         </button>
                     </div>
                 </Navbar>
-            </header>
         </>
     );
 };
