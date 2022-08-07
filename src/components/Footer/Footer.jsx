@@ -13,18 +13,10 @@ const Footer = () => {
         <footer>
             <div className="footer-content">
                 <Row>
-                    <div className="col-md-3 d-flex flex-column">
-                        <AboutUs />
-                    </div>
-                    <div className="col-md-3 d-flex flex-column">
-                        <Community />
-                    </div>
-                    <div className="col-md-3 d-flex flex-column">
-                        <Legal />
-                    </div>
-                    <div className="col-md-3 d-flex flex-column justify-content-start made-in">
-                        <MadeIn />
-                    </div>
+                    <AboutUs classVal="col-md-3 d-flex flex-column" />
+                    <Community classVal="col-md-3 d-flex flex-column" />
+                    <Legal classVal="col-md-3 d-flex flex-column" />
+                    <MadeIn classVal="col-md-3 d-flex flex-column justify-content-start made-in" />
                 </Row>
             </div>
             <div className="footer-social">

@@ -1,8 +1,8 @@
 import React from "react";
 import { Row } from "react-bootstrap";
-const Legal = () => {
+const Legal = (props) => {
     return(
-        <>
+        <div className={`${props.classVal}`}>
             <h3>Legal</h3>
             <a href="#"
               >Privacy Policy<img src="assets/images/right@1x.svg"
@@ -16,7 +16,7 @@ const Legal = () => {
             <a href="#"
               >Independent Tutor Agreement<img src="assets/images/right@1x.svg"
             /></a>
-        </>
+        </div>
     );
 };
 export default Legal;
