@@ -1,8 +1,10 @@
 import react from "react";
+import { Link } from "react-router-dom";
+
 const SingleInfinite = (props) => {
   return (
     <div className="img-item">
-        <a href="#">
+        <Link to="#">
             <img
             src={ props.data.image }
             className="community-image"
@@ -16,7 +18,7 @@ const SingleInfinite = (props) => {
                 </div>
                 <span>{props.data.title}</span>
             </div>
-        </a>
+        </Link>
     </div>
   );
 };

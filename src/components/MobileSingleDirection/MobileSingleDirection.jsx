@@ -1,15 +1,17 @@
 import react from "react";
+import { Link } from "react-router-dom";
+
 const MobileSingleDirection = (props) => {
   return (
     <div className="mobile-img-item">
-      <a href="#">
+      <Link to="#">
         <div className="move-item">
           <div className="move-item-text">{ props.data.title }</div>
           <div className={`move-item-icon ${props.data.direction}`}>
             <img src="assets/images/right@1x.svg" />
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 };

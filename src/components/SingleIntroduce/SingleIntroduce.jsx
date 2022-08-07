@@ -1,5 +1,5 @@
 import react from "react";
-import { Col } from "react-bootstrap";
+
 const SingleIntroduce = (props) => {
   return (
     <div className="col-lg-4">
