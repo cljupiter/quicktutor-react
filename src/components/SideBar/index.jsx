@@ -13,20 +13,20 @@ const SideBar = () => {
         <div className="sidemenu">
             <div className="sidemenu-close"></div>
             <div className="sidemenu-content">
-                <AboutUs classVal="sidemenu-item footer-content d-flex flex-column" />
-                <Community classVal="sidemenu-item footer-content d-flex flex-column" />
-                <Legal classVal="sidemenu-item footer-content d-flex flex-column" />
+                <AboutUs classVal="sidemenu-item footer-content side-content d-flex flex-column" imageDisplay="none" />
+                <Community classVal="sidemenu-item footer-content side-content d-flex flex-column" imageDisplay="none" />
+                <Legal classVal="sidemenu-item footer-content side-content d-flex flex-column" imageDisplay="none" />
                 <MadeIn classVal="sidemenu-item footer-content d-flex flex-column justify-content-start made-in" />
-                <div class="sidemenu-item d-flex justify-content-center">
+                <div className="sidemenu-item d-flex justify-content-center">
                     <AppList classVal="" />
                 </div>
-                <div class="sidemenu-item">
+                <div className="sidemenu-item">
                     <SocialSite classVal="social-list" />
                 </div>
-                <div class="sidemenu-item d-flex justify-content-center">
+                <div className="sidemenu-item d-flex justify-content-center">
                     <RelateSite classVal="" />
                 </div>
-                <p class="copyright-text">
+                <p className="copyright-text">
                     © 2022 QuickTutor, LLC. All Rights Reserved.
                 </p>
             </div>

@@ -5,16 +5,16 @@ const Legal = (props) => {
         <div className={`${props.classVal}`}>
             <h3>Legal</h3>
             <a href="#"
-              >Privacy Policy<img src="assets/images/right@1x.svg"
+              >Privacy Policy<img src="assets/images/right@1x.svg" style={{ display: props.imageDisplay }}
             /></a>
             <a href="#"
-              >Service Terms of Use<img src="assets/images/right@1x.svg"
+              >Service Terms of Use<img src="assets/images/right@1x.svg" style={{ display: props.imageDisplay }}
             /></a>
             <a href="#"
-              >Payments Terms of Service<img src="assets/images/right@1x.svg"
+              >Payments Terms of Service<img src="assets/images/right@1x.svg" style={{ display: props.imageDisplay }}
             /></a>
             <a href="#"
-              >Independent Tutor Agreement<img src="assets/images/right@1x.svg"
+              >Independent Tutor Agreement<img src="assets/images/right@1x.svg" style={{ display: props.imageDisplay }}
             /></a>
         </div>
     );
