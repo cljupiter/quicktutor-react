@@ -1,5 +1,5 @@
-import React, { useContext} from 'react'
-import { Outlet } from 'react-router'
+import React, { useContext} from 'react';
+import { Outlet } from 'react-router';
 import Header from "./Header";
 import NavBar from "../components/NavBar";
 import SideBar from "../components/SideBar";
