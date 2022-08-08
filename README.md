@@ -1,4 +1,4 @@
-## Fivestarsmobi-Landing-Site
+## Quicktutor-Landing-Site
 
 #### Please visit quicktutor.com  deployed on heroku
 
